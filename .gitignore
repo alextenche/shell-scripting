@@ -39,6 +39,7 @@ Thumbs.db
 # custom files #
 ######################
 access_log
-.txt
-.csv
-.html
+*.xls
+*.txt
+*.csv
+*.html

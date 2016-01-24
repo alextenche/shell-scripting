@@ -27,3 +27,5 @@ BEGIN{OFS="!"} {$11="ELEVEN"; print NF, $0}
 {print "\"" $1 "\" + 0 = " $1 + 0}
 
 BEGIN{a=1} {print a, $0}
+
+BEGIN {print "title"} {print} END {print NR}
