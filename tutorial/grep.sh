@@ -27,3 +27,5 @@ grep 'pop[0-9]\B' file
 
 # -v remove
 grep -v '^\s*#' file
+
+grep -i break-in auth.log | awk {'print $12'}
