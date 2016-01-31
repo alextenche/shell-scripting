@@ -7,3 +7,9 @@ do
   Quantity : \t $quantity \n"
 done < $1
 IFS=$OLDIFS
+
+# ./parsecsv.sh tools.txt | grep -A2 hammer
+# display individual catalog entries
+# -A2 display 2 lines after the search term
+# -B2 before 2 lines
+# -C2 context
