@@ -43,3 +43,6 @@ access_log
 *.txt
 *.csv
 *.html
+#!/usr/bin/awk -f
+
+mapreduce.awk
