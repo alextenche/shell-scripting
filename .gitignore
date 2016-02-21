@@ -40,9 +40,9 @@ Thumbs.db
 ######################
 access_log
 *.xls
-*.txt
 *.csv
 *.html
+*.list
 #!/usr/bin/awk -f
 
 mapreduce.awk
