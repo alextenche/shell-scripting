@@ -1,0 +1,7 @@
+cat
+dog
+Dog
+cat dog
+DOG
+cat Dog
+ Dog

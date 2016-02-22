@@ -1,3 +1,4 @@
+# parse access logs
 BEGIN { FS=" "; print "Log access" }
 { ip[$1]++ }
 END { for (i in ip)

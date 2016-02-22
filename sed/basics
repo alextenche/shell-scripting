@@ -1,0 +1,14 @@
+# -n suppress output of non matching lines
+sed -ne '/^dog/p' animals.txt
+sed -ne '/dog$/p' animals.txt
+
+# reads from STDIN (no file indicated)
+sed -ne '/^dog$/p'
+
+# case insensitive
+cat animals.txt | sed -ne '/^dog$/Ip'
+
+# escape quantifiers in regexes
+sed -ne /^d.\+/Ip' animals.txt
+
+sed -ne '/^d.\+[0-9]/Ip' animals.txt
