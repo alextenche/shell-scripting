@@ -1,0 +1,20 @@
+# adds field 11 to readed file
+awk '{$11="ELEVEN";print NF, $0}' dukeofyork.txt
+
+# changes output field separator to better see the effect
+awk 'BEGIN{OFS="!"} {$11="ELEVEN";print NF, $0}' dukeofyork.txt
+
+# defining variables
+awk '{a=1; b=2; c=3; print a b * c}'
+
+# converting number to strings
+awk '{print "\"" $1 "\"+ 0 = " $1 + 0}'
+
+# arrays
+awk '{a[1]=$1; a[2]=$2; a[3]=$3; print a[1], a[2], a[3]}'
+
+# regex - contained anywhere
+awk '/up/{print "UP:", $0} /down/{print "DOWN:", $0}' dukeofyork.txt
+
+# regex with ~ - contained only in field $4
+awk '$4 ~ /up/{print "UP:", $0}' dukeofyork.txt

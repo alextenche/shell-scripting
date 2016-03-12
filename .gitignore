@@ -46,3 +46,4 @@ access_log
 #!/usr/bin/awk -f
 
 mapreduce.awk
+work
